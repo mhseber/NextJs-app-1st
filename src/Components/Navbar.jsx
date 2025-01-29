@@ -16,7 +16,8 @@ export default function Navbar() {
                             <li>Home</li></Link>
                         <Link href="posts">
                             <li>Posts</li></Link>
-
+                        <Link href="meals">
+                            <li>Meals</li></Link>
                     </ul>
                 </nav>
             </div>

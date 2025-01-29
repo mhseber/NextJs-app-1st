@@ -6,6 +6,11 @@ export const getPosts = async () => {
     return data
 }
 
+export const metadata = {
+    title: "All posts | NextJs-app-1st",
+    description: "Loading JSON placeholder posts using Server",
+};
+
 export default async function Posts() {
     const posts = await getPosts()
     return (
