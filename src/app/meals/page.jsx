@@ -34,7 +34,8 @@ export default async function MealsPage({ searchParams }) {
                 {meals?.map((singleMeal) => {
                     return (
                         <div>
-                            <p className='text-3xl text-sky-500 font-bold'>{singleMeal.strMeal}</p>
+                            <img src={singleMeal?.strMealThumb} alt="ppp" />
+                            <p className='text-3xl text-sky-500 font-bold'>{singleMeal?.strMeal}</p>
                             <p>{singleMeal.strInstructions}</p>
                             <Link href={`/meals/${singleMeal.idMeal}`}>Details</Link>
                         </div>
